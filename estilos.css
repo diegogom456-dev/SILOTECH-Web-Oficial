@@ -1,0 +1,149 @@
+/* COLORES OFICIALES: MODIFICAR AQUÍ SI LO DESEÁS */
+:root{--verde:#285f18;--verde-oscuro:#183f17;--verde-acento:#4a9708;--verde-suave:#edf5e8;--blanco:#fff;--texto:#233024;--gris:#667267;--ancho:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:78px}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--texto);background:var(--blanco);line-height:1.65}a{text-decoration:none;color:inherit}button,input,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.72}.contenedor{width:min(90%,var(--ancho));margin:auto}.seccion{padding:110px 0}.encabezado{height:78px;position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(255,255,255,.96);box-shadow:0 2px 18px rgba(0,0,0,.07);backdrop-filter:blur(10px)}.barra{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.marca{display:flex;align-items:center;gap:11px;color:var(--verde);font-size:20px;font-weight:800;letter-spacing:1px}.marca img{width:48px;height:48px;object-fit:cover;border-radius:50%}.navegacion{display:flex;align-items:center;gap:26px}.navegacion a{font-size:14px;font-weight:700;transition:color .2s}.navegacion a:hover,.pie a:hover{color:var(--verde-acento)}.menu-boton{display:none;background:none;border:0;padding:8px}.menu-boton span{display:block;width:26px;height:3px;background:var(--verde);margin:5px 0;border-radius:3px}
+
+/* PORTADA: fondo verde provisional hasta agregar video e imagen */
+.portada{min-height:100svh;position:relative;display:flex;align-items:center;overflow:hidden;color:white;background:linear-gradient(130deg,#102c17,#285f18 50%,#407b24)}.video-fondo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.portada-capa{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,31,12,.88),rgba(9,31,12,.48));z-index:1}.portada-contenido{position:relative;z-index:2;padding-top:95px;padding-bottom:95px}.etiqueta,.sobre-titulo{font-size:13px;font-weight:800;letter-spacing:3px;color:var(--verde-acento);margin:0 0 20px}.etiqueta{color:#c3e7ac}.portada h1{font-size:clamp(42px,6.4vw,84px);line-height:1.08;letter-spacing:-2.5px;max-width:1000px;margin:0 0 26px}.portada h1 em,.titulo-seccion em{font-style:normal;color:#a7d68b}.portada-descripcion{font-size:clamp(16px,1.6vw,20px);max-width:570px;color:#e7f0e4}.botones{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.boton{display:inline-flex;align-items:center;justify-content:center;gap:13px;padding:14px 25px;border-radius:7px;font-size:15px;font-weight:700;border:2px solid transparent;transition:transform .25s,background .25s,color .25s}.boton:not(:disabled):hover{transform:translateY(-3px)}.boton-claro{background:white;color:var(--verde-oscuro)}.boton-borde{border-color:white;color:white;background:transparent}.boton-borde:hover{background:white;color:var(--verde-oscuro)}.deslizar{position:absolute;bottom:27px;left:50%;transform:translateX(-50%);z-index:2;color:#e8f1e6;font-size:12px;letter-spacing:1.2px;white-space:nowrap}.deslizar span{display:block;text-align:center;font-size:24px;animation:flotar 1.8s infinite}@keyframes flotar{50%{transform:translateY(7px)}}
+
+/* GALERÍA */
+.galeria{background:#f7faf5}.titulo-seccion{font-size:clamp(32px,4.2vw,56px);line-height:1.14;letter-spacing:-1.5px;margin:0 0 23px;color:var(--verde-oscuro)}.introduccion{font-size:18px;color:var(--gris);margin-bottom:44px}.tarjetas{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.tarjeta{background:white;border-radius:12px;overflow:hidden;box-shadow:0 12px 30px rgba(20,55,22,.07)}.tarjeta-imagen{height:340px;display:flex;align-items:center;justify-content:center;background-size:cover;background-position:center;position:relative}.tarjeta-imagen:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,41,14,.36),transparent)}.tarjeta-imagen span{position:relative;z-index:1;color:white;font-size:70px;font-weight:800;opacity:.8}
+/* =========================================
+IMÁGENES DE SILOTECH
+========================================= */
+
+/* IMAGEN 1 - EL DESAFÍO */
+.imagen-uno {
+    background-image: url("imagenes/desafio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* IMAGEN 2 - LA SOLUCIÓN */
+.imagen-dos {
+    background-image: url("imagenes/solucion.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* IMAGEN 3 - EL CONTROL */
+.imagen-tres {
+    background-image: url("imagenes/control.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* PARA AGREGAR IMÁGENES: cambiar a url('imagenes/silobolsas.jpg') etc. */.tarjeta-texto{padding:26px}.numero{color:var(--verde-acento);font-size:12px;letter-spacing:1.3px;font-weight:800}.tarjeta h3{font-size:23px;line-height:1.25;color:var(--verde-oscuro);margin:12px 0}.tarjeta p:last-child{color:var(--gris);margin-bottom:0}
+/* PROYECTO */
+.proyecto-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:start}.proyecto .titulo-seccion em{color:var(--verde-acento)}.proyecto-contenido h3{font-size:24px;color:var(--verde);margin:0 0 10px}.proyecto-contenido p{color:var(--gris);margin:0 0 30px}.beneficios{margin-top:60px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.beneficios>div{padding:30px;border:1px solid #dce9d5;border-radius:12px}.beneficios span{font-size:31px;color:var(--verde-acento)}.beneficios h3{margin:12px 0 6px}.beneficios p{color:var(--gris);margin:0}
+
+/* DESCARGA */
+.descarga{background:linear-gradient(130deg,#163c18,#2b681e);color:white;overflow:hidden}.descarga-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}.descarga .titulo-seccion{color:white}.descarga p{max-width:520px}.sobre-titulo-claro{color:#c2e6a8}.descarga .boton{margin-top:22px}.descarga .nota{font-size:13px;color:#d5e9d0}.telefono{justify-self:center;background:#101a13;border:8px solid #101a13;border-radius:38px;padding:6px;width:275px;min-height:475px;box-shadow:0 24px 65px rgba(0,0,0,.3);transform:rotate(4deg)}.telefono-pantalla{min-height:447px;background:#f3f8f0;border-radius:27px;padding:28px 18px;color:var(--verde-oscuro);text-align:center}.telefono-camara{width:75px;height:12px;border-radius:20px;background:#101a13;margin:-23px auto 28px}.telefono-marca{font-size:21px;font-weight:800;letter-spacing:1px}.telefono h3{font-size:18px}.estado-demo{background:#dcefd3;border-radius:8px;padding:12px;margin-bottom:20px;font-weight:700}.dato-demo{display:flex;justify-content:space-between;border-bottom:1px solid #d6e5d1;padding:13px 2px;font-size:13px}.telefono small{display:block;margin-top:23px;color:var(--gris)}
+
+/* CONTACTO */
+.contacto-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;margin-top:42px}.contacto-datos>p{font-size:18px;color:var(--gris);max-width:400px}.dato-contacto{display:flex;flex-direction:column;gap:3px;margin:30px 0}.dato-contacto strong{color:var(--verde)}.dato-contacto span{color:var(--gris)}.formulario-caja{background:#f5f9f2;border-radius:14px;padding:35px}.formulario-caja h3{font-size:25px;margin:0}.formulario-caja>p{color:var(--gris);font-size:14px}.formulario-caja form{display:flex;flex-direction:column;gap:10px}.formulario-caja label{font-weight:700;font-size:14px}.formulario-caja input,.formulario-caja textarea{width:100%;padding:13px;border:1px solid #cbdac7;border-radius:7px;background:white;resize:vertical;margin-bottom:10px}.boton-verde{background:var(--verde);color:white;align-self:flex-start}.pie{background:#102e15;color:#e4eee0;padding:34px 0}.pie-contenido{display:flex;align-items:center;justify-content:space-between;gap:24px}.marca-pie{color:white}.pie p{font-size:13px;text-align:center}.pie a:last-child{font-size:13px}
+
+/* APARICIÓN AL BAJAR */
+.revelar{opacity:0;transform:translateY(35px);transition:opacity .8s ease,transform .8s ease}.revelar.visible{opacity:1;transform:translateY(0)}.tarjeta:nth-child(2){transition-delay:.15s}.tarjeta:nth-child(3){transition-delay:.3s}
+@media(max-width:900px){.navegacion{gap:14px}.navegacion a{font-size:12px}.tarjetas{gap:13px}.tarjeta-imagen{height:210px}.proyecto-grid,.contacto-grid,.descarga-grid{gap:35px}}
+@media(max-width:700px){.encabezado{height:70px}.marca img{width:42px;height:42px}.menu-boton{display:block}.navegacion{position:absolute;top:70px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;background:white;padding:15px 5%;box-shadow:0 14px 20px rgba(0,0,0,.1)}.navegacion.abierto{display:flex}.navegacion a{font-size:16px;padding:12px 0}.seccion{padding:75px 0}.portada h1{letter-spacing:-1px}.tarjetas,.proyecto-grid,.beneficios,.descarga-grid,.contacto-grid{grid-template-columns:1fr}.tarjeta-imagen{height:240px}.descarga-grid{gap:50px}.telefono{transform:none}.pie-contenido{flex-direction:column;text-align:center}.formulario-caja{padding:25px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.revelar{opacity:1;transform:none;transition:none}.deslizar span{animation:none}}
+
+
+/* ALTURA DE IMÁGENES EN CELULARES */
+@media (max-width: 700px) {
+    .tarjeta-imagen {
+        height: 320px;
+    }
+}
+
+
+
+/* CELULAR SILOMONITOR EN LA SECCIÓN DESCARGAR */
+.imagen-app {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    justify-self: center;
+
+    /* Sin fondo ni bordes */
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+    /* La imagen ya tiene su propia sombra */
+    box-shadow: none;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 700px) {
+    .imagen-app {
+        max-width: 290px;
+    }
+}
+
+
+/* GOOGLE MAPS - CONTACTO */
+.mapa-contacto {
+  margin-top: 16px;
+}
+.mapa-contacto iframe {
+  display: block;
+  width: 100%;
+  height: 260px;
+  border: 0;
+  border-radius: 14px;
+  background: #edf5e8;
+  box-shadow: 0 10px 28px rgba(20, 55, 22, .10);
+}
+.mapa-enlace {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 12px;
+  color: var(--verde);
+  font-weight: 700;
+  font-size: 14px;
+}
+.mapa-enlace:hover {
+  color: var(--verde-acento);
+  text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .mapa-contacto iframe { height: 230px; }
+}
+
+
+/* INSTAGRAM OFICIAL DE SILOTECH */
+.instagram-contacto {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--verde);
+  font-weight: 700;
+  transition: color .2s ease;
+}
+.instagram-contacto:hover { color: var(--verde-acento); }
+.instagram-icono { width: 21px; height: 21px; flex-shrink: 0; }
+.pie-redes { display: flex; align-items: center; gap: 18px; }
+.instagram-pie {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 50%;
+  color: #fff;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.instagram-pie:hover {
+  color: #fff !important;
+  background: var(--verde-acento);
+  border-color: var(--verde-acento);
+  transform: translateY(-2px);
+}
+.instagram-pie .instagram-icono { width: 19px; height: 19px; }
+@media (max-width: 700px) { .pie-redes { justify-content: center; } }

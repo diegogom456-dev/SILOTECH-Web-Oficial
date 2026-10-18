@@ -1,0 +1,62 @@
+/* SILOTECH — ventana de confirmación del formulario */
+.confirmacion-fondo[hidden] { display: none !important; }
+.confirmacion-fondo {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  background: rgba(9, 28, 19, 0.66);
+  backdrop-filter: blur(5px);
+  animation: confirmacionAparece 220ms ease-out;
+}
+.confirmacion-tarjeta {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 440px;
+  padding: 38px 30px 32px;
+  background: #ffffff;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 24px 80px rgba(0,0,0,.23);
+  animation: confirmacionSube 260ms ease-out;
+}
+.confirmacion-icono {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #e5f5e9;
+  color: #167c3a;
+  font: 700 43px/1 Arial, sans-serif;
+}
+.confirmacion-tarjeta h2 {
+  margin: 0 0 12px;
+  color: #10472c;
+  font-size: clamp(25px, 5vw, 32px);
+  line-height: 1.2;
+}
+.confirmacion-tarjeta p {
+  margin: 0 0 12px;
+  color: #33483b;
+  line-height: 1.55;
+}
+.confirmacion-tarjeta .confirmacion-detalle {
+  margin-bottom: 25px;
+  color: #617168;
+  font-size: 14px;
+}
+.confirmacion-tarjeta .boton {
+  min-width: 165px;
+  cursor: pointer;
+}
+.confirmacion-abierta { overflow: hidden; }
+@keyframes confirmacionAparece { from { opacity: 0; } to { opacity: 1; } }
+@keyframes confirmacionSube { from { opacity: 0; transform: translateY(18px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .confirmacion-fondo, .confirmacion-tarjeta { animation: none; }
+}

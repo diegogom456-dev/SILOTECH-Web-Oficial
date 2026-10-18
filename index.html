@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SILOTECH: tecnología inteligente para proteger tus granos. Conocé el proyecto y su aplicación móvil.">
+  <title>SILOTECH | Tecnología inteligente para proteger tus granos</title>
+  <link rel="icon" type="image/png" href="imagenes/logo.png">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="confirmacion.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- MENÚ SUPERIOR -->
+  <header class="encabezado" id="encabezado">
+    <div class="contenedor barra">
+      <a class="marca" href="#inicio" aria-label="SILOTECH - Inicio">
+        <img src="imagenes/logo.png" alt="Logo SILOTECH">
+        <span>SILOTECH</span>
+      </a>
+      <button class="menu-boton" id="menuBoton" type="button" aria-label="Abrir menú" aria-controls="menuNavegacion" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="navegacion" id="menuNavegacion" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Visión</a>
+        <a href="#proyecto">Nuestro proyecto</a>
+        <a href="#descargar">Descargar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PORTADA: MODIFICAR video en videos/portada.mp4 cuando lo tengas -->
+    <section id="inicio" class="portada">
+      <video class="video-fondo" autoplay muted loop playsinline aria-hidden="true">
+        <source src="videos/portada.mp4" type="video/mp4">
+      </video>
+      <div class="portada-capa"></div>
+      <div class="contenedor portada-contenido">
+        <p class="etiqueta">INNOVACIÓN PARA EL AGRO</p>
+        <h1>Tecnología inteligente<br>para <em>proteger tus granos.</em></h1>
+        <p class="portada-descripcion">Monitoreo inteligente de silobolsas. Más información para cuidar tu producción.</p>
+        <div class="botones">
+          <a class="boton boton-claro" href="#proyecto">Conocer más <span aria-hidden="true">↓</span></a>
+          <a class="boton boton-borde" href="#descargar">Descargar aplicación <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <a class="deslizar" href="#galeria" aria-label="Deslizar a nuestra visión">Descubrí SILOTECH <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <!-- VISIÓN: imágenes configuradas desde estilos.css -->
+    <section id="galeria" class="seccion galeria">
+      <div class="contenedor">
+        <p class="sobre-titulo revelar">NUESTRA VISIÓN</p>
+        <h2 class="titulo-seccion revelar">Del campo a tus manos.</h2>
+        <p class="introduccion revelar">Tres ideas que representan lo que buscamos con SILOTECH.</p>
+        <div class="tarjetas">
+          <article class="tarjeta revelar">
+            <div class="tarjeta-imagen imagen-uno" role="img" aria-label="Silobolsas en un campo agrícola"><span>01</span></div>
+            <div class="tarjeta-texto"><p class="numero">01 — EL DESAFÍO</p><h3>Proteger lo que producimos</h3><p>El almacenamiento de granos en silobolsas requiere un seguimiento adecuado de las condiciones internas. Las variaciones de temperatura, humedad y concentración de CO₂ pueden advertir sobre posibles problemas de conservación y riesgos de pérdidas económicas.</p></div>
+          </article>
+          <article class="tarjeta revelar">
+            <div class="tarjeta-imagen imagen-dos" role="img" aria-label="Sensor de monitoreo instalado en una silobolsa, imagen ilustrativa"><span>02</span></div>
+            <div class="tarjeta-texto"><p class="numero">02 — LA SOLUCIÓN</p><h3>Tecnología aplicada al campo</h3><p>SILOTECH propone un sistema de monitoreo que utiliza sensores y un microcontrolador para registrar la temperatura, la humedad y el CO₂. Su objetivo es facilitar la detección temprana de condiciones desfavorables mediante una alternativa tecnológica accesible.</p></div>
+          </article>
+          <article class="tarjeta revelar">
+            <div class="tarjeta-imagen imagen-tres" role="img" aria-label="Vista ilustrativa de una aplicación móvil de monitoreo"><span>03</span></div>
+            <div class="tarjeta-texto"><p class="numero">03 — EL CONTROL</p><h3>Información en tus manos</h3><p>A través de la aplicación móvil, el usuario puede consultar las mediciones del sistema, conocer el estado de la silobolsa y revisar el historial de registros. Además, el proyecto contempla alertas que ayudan a tomar decisiones a tiempo.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUESTRO PROYECTO: modificar los textos si lo necesitan -->
+    <section id="proyecto" class="seccion proyecto">
+      <div class="contenedor proyecto-grid">
+        <div class="revelar"><p class="sobre-titulo">CONOCÉ SILOTECH</p><h2 class="titulo-seccion">Cuidar tus granos empieza con <em>información.</em></h2></div>
+        <div class="proyecto-contenido revelar"><h3>¿Qué es SILOTECH?</h3><p>SILOTECH es un proyecto tecnológico que busca facilitar el monitoreo de las condiciones de almacenamiento de granos en silobolsas mediante una aplicación móvil.</p><h3>¿Para qué sirve?</h3><p>Permite consultar mediciones y detectar condiciones que podrían comprometer la conservación de los granos, para favorecer decisiones oportunas.</p></div>
+      </div>
+      <div class="contenedor beneficios revelar">
+        <div><span aria-hidden="true">◉</span><h3>Monitoreo</h3><p>Información sobre las condiciones del silo.</p></div>
+        <div><span aria-hidden="true">♧</span><h3>Alertas</h3><p>Avisos ante valores que requieren atención.</p></div>
+        <div><span aria-hidden="true">✓</span><h3>Prevención</h3><p>Más herramientas para el cuidado de los granos.</p></div>
+      </div>
+    </section>
+
+    <!-- DESCARGA DE SILOMONITOR: APK alojado en GitHub Releases -->
+    <section id="descargar" class="seccion descarga">
+      <div class="contenedor descarga-grid">
+        <div class="revelar"><p class="sobre-titulo sobre-titulo-claro">LA APP DE SILOTECH</p><h2 class="titulo-seccion">El control de tus silobolsas, <em>en tu celular.</em></h2><p>Accedé a la información del monitoreo desde tu dispositivo Android.</p><a class="boton boton-claro" href="https://github.com/diegogom456-dev/SiloMonitor-APP/releases/latest/download/SiloMonitor.apk">Descargar SiloMonitor para Android ↓</a><p class="nota">Descargá el APK para Android. Es posible que tu dispositivo solicite autorización para instalar aplicaciones desde el navegador.</p></div>
+        <img
+            src="imagenes/silomonitor-descarga.png"
+            alt="Aplicación SILOMONITOR de SILOTECH mostrando las mediciones de temperatura, humedad y CO₂"
+            class="imagen-app revelar"
+          >
+      </div>
+    </section>
+
+    <!-- CONTACTO: formulario conectado a Formspree -->
+    <section id="contacto" class="seccion contacto">
+      <div class="contenedor">
+        <p class="sobre-titulo revelar">HABLEMOS</p><h2 class="titulo-seccion revelar">Contactanos.</h2>
+        <div class="contacto-grid">
+          <div class="contacto-datos revelar"><p>¿Tenés preguntas sobre SILOTECH? Podés comunicarte con nuestro equipo.</p><div class="dato-contacto"><strong>Correo electrónico</strong><span><a href="mailto:silotechcontacto@gmail.com">silotechcontacto@gmail.com</a></span></div><div class="dato-contacto"><strong>Teléfono / WhatsApp</strong><span><a href="https://wa.me/5493624547858" target="_blank" rel="noopener noreferrer">+54 9 362 454-7858</a></span></div><div class="dato-contacto"><strong>Instagram</strong><span><a class="instagram-contacto" href="https://www.instagram.com/silotech.ag/" target="_blank" rel="noopener noreferrer"><svg class="instagram-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg><span>@silotech.ag</span></a></span></div><div class="dato-contacto"><strong>Ubicación</strong><span>E.E.T. N.º 24 «Simón de Iriondo»<br>Resistencia, Chaco, Argentina</span></div>
+            <div class="mapa-contacto">
+              <iframe
+                title="Mapa de ubicación de SILOTECH en Resistencia, Chaco"
+                src="https://www.google.com/maps?q=E.E.T.%20N%C2%BA%2024%20Sim%C3%B3n%20de%20Iriondo%2C%20Resistencia%2C%20Chaco%2C%20Argentina&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+              <a class="mapa-enlace" href="https://maps.app.goo.gl/9DjH7EyoLEy544XGA" target="_blank" rel="noopener noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a>
+            </div></div>
+          <div class="formulario-caja revelar">
+            <h3>Envianos tu consulta</h3>
+            <p>Completá el formulario y nuestro equipo recibirá tu mensaje.</p>
+            <form id="formularioContacto" action="https://formspree.io/f/mjygjazb" method="POST">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required maxlength="100">
+
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" required maxlength="254">
+
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta..." required maxlength="3000"></textarea>
+
+              <button id="botonEnviarConsulta" class="boton boton-verde" type="submit">Enviar consulta</button>
+              <p id="estadoFormulario" role="status" aria-live="polite" style="margin-top: 12px;"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Confirmación de consulta enviada correctamente -->
+  <div id="modalConfirmacion" class="confirmacion-fondo" hidden>
+    <div class="confirmacion-tarjeta" role="dialog" aria-modal="true" aria-labelledby="confirmacionTitulo" aria-describedby="confirmacionDescripcion" tabindex="-1">
+      <div class="confirmacion-icono" aria-hidden="true">✓</div>
+      <h2 id="confirmacionTitulo">¡Consulta enviada!</h2>
+      <p id="confirmacionDescripcion">Tu mensaje fue enviado correctamente.</p>
+      <p class="confirmacion-detalle">Gracias por comunicarte con SILOTECH. Nuestro equipo responderá a tu consulta lo antes posible.</p>
+      <button id="cerrarConfirmacion" class="boton boton-verde" type="button">Entendido</button>
+    </div>
+  </div>
+
+  <footer class="pie"><div class="contenedor pie-contenido"><div class="pie-redes"><a class="marca marca-pie" href="#inicio"><img src="imagenes/logo.png" alt="Logo SILOTECH"><span>SILOTECH</span></a><a class="instagram-pie" href="https://www.instagram.com/silotech.ag/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial de SILOTECH" title="Seguinos en Instagram"><svg class="instagram-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a></div><p>© 2026 SILOTECH — Tecnología inteligente para el cuidado en almacenamiento de granos.</p><a href="#inicio">Volver arriba ↑</a></div></footer>
+</body>
+</html>
